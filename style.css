@@ -1,0 +1,61 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fdf6e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 2px solid #ccc;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #f0f0f0;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.restart-btn:hover {
+  background: #45a049;
+}
